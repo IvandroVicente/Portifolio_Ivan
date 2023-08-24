@@ -1,0 +1,256 @@
+.App-header {
+background-color: #212428;
+  min-height: 100vh;
+  display: block;
+  position: relative;
+}
+
+
+/*=======================================Seção Menu=======================================================*/
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 60px;
+  height: 100px;
+}
+
+.container-img {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.img1 {
+  border-radius: 100%;
+}
+
+.div-menu {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.link-menu {
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 400;
+  color: white;
+}
+
+/* Estilos do ícone do menu móvel */
+.mobile-menu-icon {
+  display: block; /* Mostra o ícone em dispositivos móveis */
+  cursor: pointer;
+}
+
+/* Estilos do menu responsivo */
+.menu-open .div-menu {
+  display: flex; /* Mostra o menu quando aberto */
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: white;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  z-index: 1000;
+}
+
+.div-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.div-menu ul li {
+  margin-bottom: 10px;
+}
+
+.mobile-menu-icon {
+  display: none;
+}
+
+.mobile-menu-icon svg {
+  display: inline-block;
+}
+
+
+/* Estilos para dispositivos móveis */
+@media screen and (max-width: 767px) {
+  .div-menu {
+    display: none;
+  }
+  
+  .menu {
+    display: flex;
+    padding: 0px 30px;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+
+  .mobile-menu-icon-open {
+    color: green /* Altere a cor do ícone ao ser clicado */
+  }
+
+  .nav-menu {
+    flex-direction: column;
+  }
+
+  .menu-open .div-menu {
+    display: flex;
+    background-color: #000;
+    box-shadow: none;
+    padding: 10px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    position: relative;
+  }
+
+  .div-menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+}
+
+/*======================================= MENU MOBILE=========================*/
+/*=======================ABOUT======================*/
+
+.area-sobre{
+  display: flex;
+  flex-direction: row;
+  height: 600px;
+  padding: 0px 110px;
+  margin-top: 60px;
+}
+
+.area-title{
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  margin-right: 18px;
+}
+
+.area-nome{
+   display: block;
+   height: 75%;
+   padding: 35px;
+   margin-bottom: 15px;
+   border-radius: 8px;
+   box-shadow: 10px 10px 15px #1f1f21, -10px -10px 19px #24282c;
+}
+
+.area-cv{
+    display: block;
+    height: 25%;
+    padding: 35px;
+    margin-top: 15px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 15px #1f1f21, -10px -10px 19px #24282c;
+}
+
+.area-img{
+  display: flex;
+  width: 60%;
+  margin-left: 18px;
+  padding: 35px;
+  border-radius: 8px;
+  box-shadow: 10px 10px 15px #1f1f21, -10px -10px 19px #24282c;
+}
+
+.img2{
+     width: 100%;
+     height: 100%;
+     border-radius: 8px;
+}
+
+/*--=======================Divisor==================================================*/
+.container-divisor{
+  display: flex;
+  padding: 0px 110px;
+  margin-top: 110px;
+  margin-bottom: 120px;
+}
+.divisor, hr{
+    width: 100%;
+    border-color: #000;
+}
+
+
+/*===========================EXPERIENCE=============================================*/
+
+
+.area-experience{
+   display: flex;
+   height: 100%;
+   flex-direction: column;
+   padding: 0px 110px;
+}
+
+h4{
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+
+h1{
+  text-align: center;
+  color: white;
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+.post-experience{
+  height: 270px;
+  padding: 35px;
+  margin-bottom: 40px;
+  border-radius: 8px;
+  box-shadow: 10px 10px 15px #1f1f21, -10px -10px 19px #24282c;
+}
+
+
+/*====================================Portifolio=====================================================*/
+
+.area-portifolio{
+  display: block;
+  height: 100%;
+  padding: 0px 110px;
+}
+
+.div-post{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  gap: 35px;
+}
+
+.listing-grid{
+    display: flex;
+    height: 500px;
+    width: 450px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 15px #1f1f21, -10px -10px 19px #24282c;
+}
